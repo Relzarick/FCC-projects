@@ -1,0 +1,284 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <div class="web-container">
+      <header id="header">
+      <img id="header-img" src="https://cdn-icons-png.flaticon.com/512/2972/2972253.png" alt="keyboard" >
+      <div class="id90">
+      <p>Made to Order, Custom Keyboards</P>
+      <nav id="nav-bar">
+        <a class="nav-link" href="#product">Key Boards</a>
+        <a class="nav-link" href="#sound-test">Sound Tests</a>
+            <a class="nav-link" href="#email-container">Newsletter</a>
+      </nav>
+      </div>
+    </header>
+    <div class="header-line"></div>
+
+    <main>
+        <div id="product" class="product-container">
+        <h2>Choose the keyboard that’s right for you.</h2>
+        <p>Your start into custom mechanical keyboards.</p>
+        <div class="keyboard-grid">
+          <div class="sub-product-container">
+            <h3>60%</h3>
+            <img src="https://pyxis.nymag.com/v1/imgs/faf/728/ae5fc02320e279393dd0545c5ecd5f356a.jpg" alt="60% keyboard">
+            <p>From $110</p>
+          </div>
+          <div class="sub-product-container">
+            <h3>65%</h3>
+            <img src="https://upgradekeyboards.com/cdn/shop/products/block67-black_1445x.jpg?v=1655083935" alt="65% keyboard">
+            <p>From $130</p>
+          </div>
+          <div class="sub-product-container">
+            <h3>TKL</h3>
+            <img src="https://switchandclick.com/wp-content/uploads/2020/09/Varmillo-MA87M-1024x576.png" alt="tkl keyboard">
+            <p>From $150</p>
+          </div>
+          <div class="sub-product-container">
+            <h3>100%</h3>
+            <img src="https://techjioblog.com/wp-content/uploads/2023/06/Qwertykeys-QK100-keyboard-cover2-1024x771.jpg" alt="100% keyboard">
+            <p>From $200</p>
+          </div>
+        </div>
+        </div>
+
+        <div id="sound-test">
+          <div class="video-container">
+            <a href="https://www.youtube.com/watch?v=U7Y50T7NKyw&ab_channel=ricecloud">
+       <video id="video" autoplay loop>
+       <source src="https://cdn.shopify.com/videos/c/o/v/11187f78d87e4d919054f5c7ab07cd0e.mp4" type="video/mp4">
+       </video>
+         <h2 class="overlay">Sound Tests</h2>
+       </div>
+       </a>
+        </div>
+
+        <section id="email-container">
+          <h2>Join our newsletter today</h2>
+          <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input name="email" type="email" id="email" placeholder="Enter Your email address">
+        <input id="submit" type="submit">
+      </form>
+        </section>
+
+        <footer><span>© 2023, Keyboard Company</span></footer>
+      
+    </main>
+    </div>
+    
+  </body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+:root {
+  --accent-color: #f5bcba;
+  --box-color: #fffff7;
+  --black: #3d405b;
+}
+* {
+  background-color: #f4e7fb;
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+  font-family: lato, arial;
+  color: var(--black);
+}
+h2 {
+  font-size: 3.5rem
+}
+h3 {
+  font-size: 2.5rem;
+  background-color: transparent;
+}
+.web-container {
+  position: relative;
+}
+header{
+  position: sticky;
+  top: 0;
+  display: flex;
+  margin: 15px;
+  padding: 1rem;
+}
+#header-img{
+  width: 80px;
+  height: 80px;
+}
+#header p {
+  font-size: 3.5rem;
+  margin-left: 1.5rem;
+}
+.id90 {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.nav-link {
+  font-size: 2rem;
+  text-decoration: none;
+  margin: 0 1.5rem;
+  white-space: nowrap;
+}
+.header-line {
+  border: 1px solid var(--accent-color);
+  width: 90%;
+  margin: 0 auto;
+}
+.product-container{
+  margin: 0 5rem;
+  padding: 1rem 2rem;
+  height: 500px;
+}
+.product-container p {
+  font-size: 2rem;
+  margin: 1rem 0 2rem 0;
+}
+.product-container h2, .product-container p {
+  margin-left: 1.5rem;
+}
+.keyboard-grid{
+  display: grid;
+  column-gap: 1.5rem;
+  grid-template-columns: auto auto auto auto;
+}
+.sub-product-container {
+  border: 3px solid var(--accent-color);
+  border-radius: 15px;
+  margin: 0 auto;
+  width: 100%;
+  background-color: var(--box-color);
+}
+.sub-product-container p {
+  background-color: transparent;
+  font-size: 2rem;
+}
+.sub-product-container img {
+  height: 300px;
+  width: 100%;
+  background-color: transparent;
+}
+
+
+#sound-test {
+  padding: 1rem;
+  margin: 1rem 2rem;
+}
+.video-container{
+  margin: auto;
+  position: relative;
+  z-index: 0;
+  min-width: 500px;
+}
+video {
+  border-radius: 18px;
+  width: 100%;
+}
+.overlay{
+  position: absolute;
+  z-index: 1;
+  top: 30%;
+  left: 40%;
+  background-color: transparent;
+  color: #eeeae6;
+}
+
+
+#email-container {
+  width: 100%;
+  height: 100px;
+}
+#email-container h2 {
+  display: flex;
+  justify-content: center;
+  margin: 1.5 auto;
+}
+input {
+  display: block;
+  width: 300px;
+  height: 50px;
+  margin: .5rem auto;
+  background-color: var(--box-color);
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: 4px;
+}
+
+
+footer {
+  position: absolute;
+  bottom: -120px;
+  right: 2rem;
+  padding-bottom: 1rem
+}
+
+
+
+
+
+
+@media only screen and (min-width: 1920px) {
+  #header-img {
+    margin-left: 200px;
+  }
+  .nav-link {
+    margin-right: 200px;
+  }
+  .keyboard-grid {
+    grid-template-columns: repeat(4,minmax(0,1fr)); 
+    margin: 0 5rem;
+  }
+  #sound-test, #video, .video-container a{
+    display: flex;
+    justify-content: center;
+  }
+  .product-container h2, .product-container p {
+    margin-left: 5rem;
+  }
+  #video {
+    width: 70%;
+    border-radius: 20px;
+  }
+  .overlay {
+    left: 45%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .keyboard-grid {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1.5rem;
+  }
+  .product-container {
+    height: 950px;
+  }
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+#submit:hover {
+  cursor: pointer;
+  background-color: var(--black);
+  color: var(--box-color);
+}
+span:hover {
+  color: var(--box-color);
+}
+  
+
+** end of undefined **
+

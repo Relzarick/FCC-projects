@@ -1,0 +1,101 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Tribute Page</title>
+  <link rel="stylesheet" href="styles.css">
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header>
+      <h1 id="title" class="header-h1">Nier Automata<h1>
+        <p class="header-p">Nier: Automata is a 2017 action role-playing game developed by PlatinumGames</p>
+    </header>
+    <main id="main">
+      <div id="img-div">
+      <img class="banner" id="image" src="https://i.redd.it/qmjbo59wwvhy.jpg">
+      <figcaption id="img-caption">Nier Automata ps4 banner</figcaption>
+      </div>
+
+      <div class="tribute-info-d" id="tribute-info">
+        <section class="tribute-lines">
+          Production began in 2014, with series creator Yoko Taro, producer Yosuke Saito, and lead composer Keiichi Okabe reprising their roles in Nier.
+        </section>
+        <section class="tribute-lines">
+          Nier: Automata was announced at E3 2015
+        </section>
+        <section class="tribute-lines">
+          Nier: Automata was released for Windows personal computers (PCs) through Steam on March 17, 2017.
+        </section>
+        <section class="tribute-lines">
+          Sales surpassed expectations and as of April 2023, the game had shipped 7.5 million copies worldwide</section>
+      </div>
+
+      <div class="tribute-link-d" id="tribute-link-d">
+        <h3>All info was gathered from the <a id="tribute-link" href="https://en.wikipedia.org/wiki/Nier:_Automata" target="_blank">Wikipedia entry</a>.</h3>
+      </div>
+      </main>
+      </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  background-color: lightgray;
+  font-size: 16px;
+  font-family: Helvetica, arial;
+  width: 100%;
+}
+.header-h1 {
+  font-size: 45px;
+  padding-top: 50px;
+  margin: 0;
+  text-align: center;
+  font-family: Lucida Bright;
+}
+.header-p {
+  font-size: 18px;
+  text-align: center;
+  color: gray;
+}
+.banner {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+figcaption {
+  text-align: center;
+}
+
+
+a  {
+  color: #696969;
+  text-decoration: none;
+}
+.tribute-info-d {
+  padding: 20px auto;
+  margin: 0 5px;
+}
+section {
+  Padding: 20px 0;
+  margin: 2.5px 0;
+}
+.tribute-lines:hover {
+  background-color: white;
+  transition: 0.8s;
+  border-radius: 5px;
+}
+.tribute-link-d {
+  padding-top: 160px;
+  color: black;
+  text-align: center
+}
+
+** end of undefined **
+
