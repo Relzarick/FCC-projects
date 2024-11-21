@@ -1,0 +1,31 @@
+:root {
+  --project1-background: #bdb5d5;
+  --project1-white: #f3f3f3;
+  --project1-form: #1b1b32;
+  --project1-sumbit: #37af65;
+
+  --project2-background: lightgray;
+  --project2-font-accent: gray;
+  --project2-hover: white;
+  --project2-link: #696969;
+
+  --project3-background: #f4f1de;
+  --project3-font: black;
+  --project3-accent: #81b29a;
+  --project3-accent2: #eab69f;
+  --project3-border: #3d405b;
+
+  --project4-background: #f4e7fb;
+  --project4-accent: #f5bcba;
+  --project4-container: #fffff7;
+  --project4-fonts: #3d405b;
+}
+
+#project-4 {
+  background-color: var(--project4-background);
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+  font-family: lato, arial;
+  color: var(--project4-fonts);
+}
