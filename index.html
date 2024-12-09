@@ -3,27 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Palindrome Checker</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>FCC Projects</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <div class="is-it-container">
-      <h1>Is it a Palindrome?</h1>
+
+    <div class="palindrome-main-container">
+        <h1>Is it a Palindrome?</h1>
+      
+      <div class="palindrome-subcontainer">
+        <p>Enter in text to check for a palindrome:</p>
+        <input id="palindrome-input" type="text" />
+        <button id="palindrome-btn">Check</button>
+        <div id="palindrome-result"></div>
+      </div>
+
+      <div class="palindrome-info">
+        <p>
+          💡 A palindrome is a word or sentence that's spelled the same way both
+          forward and backward, ignoring punctuation, case, and spacing.
+        </p>
+      </div>
+    </div>
+    
+
+    <div class="validator-main-container">
+        <h1>Telephone Number Validator<h1>
+      
+      <div class="validator-subcontainer">
+        <form label="validator">
+          <p>Enter a Phone Number:</p>
+          <input name='validator' id="validator-input">
+          <button class="validator-btn" id="check-btn">Check</button>
+            <button class="validator-btn" id="clear-btn">Clear</button>
+        </form>    
+      </div>
+      <div id="results-div"><div>
     </div>
 
-    <div class="qn-container">
-      <p>Enter in text to check for a palindrome:</p>
-      <input id="text-input" type="text" />
-      <button id="check-btn">Check</button>
-      <div id="result"></div>
+    
+    <div class="converter-main-container">
+        <h1>Roman Numeral Converter</h1>
+      
+    <div class="line"></div> 
+    
+    <div class="converter-subcontainer">
+      <h2>Enter a Number:<h2>
+        <form id="form">
+          <fieldset>
+        <input id="number" type="number" >
+        <button id="convert-btn" type="submit">Convert</button>
+        </fieldset>
+        </form>
     </div>
 
-    <div class="info-container">
-      <p class="info">
-        💡 A palindrome is a word or sentence that's spelled the same way both
-        forward and backward, ignoring punctuation, case, and spacing.
-      </p>
+    <div id="output" class="hidden"></div>
     </div>
+
+      
     <script src="script.js"></script>
   </body>
 </html>

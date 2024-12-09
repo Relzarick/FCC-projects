@@ -1,0 +1,140 @@
+:root {
+  --background: #1b1b32;
+  --font: white;
+  --green: #00471b;
+  --black: #0a0a23;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--font);
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.8rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.7rem;
+}
+
+fieldset {
+  border: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.line {
+  border: 1px solid var(--font);
+  width: 80%;
+  margin: auto;
+}
+
+.palindrome-main-container {
+  margin: 10rem auto;
+}
+
+#palindrome-input {
+  height: 3.5vh;
+  width: 25vw;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 0 auto;
+}
+
+.palindrome-info {
+  margin: 1rem auto;
+  width: 49vw;
+  padding: 1rem;
+  background-color: var(--green);
+  border-radius: 2rem;
+}
+
+#palindrome-btn {
+  min-width: 3.5rem;
+  min-height: 3rem;
+  border: 1px solid var(--font);
+  background-color: var(--font);
+  color: var(--black);
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  align-items: center;
+  margin-left: 1vw;
+}
+
+.validator-main-container {
+  margin: 10rem auto;
+}
+
+.validator-subcontainer {
+  border: 2px solid var(--font);
+  border-radius: 4px;
+  width: 350px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin: auto;
+}
+
+.validator-subcontainer p {
+  font-size: 1.2rem;
+}
+
+.validator-btn {
+  height: 40px;
+  padding: 0 30px;
+  position: relative;
+  top: 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+#validator-input {
+  height: 35px;
+  width: 250px;
+  border: none;
+  border-radius: 4px;
+  display: block;
+  font-size: 1.5rem;
+}
+
+.converter-main-container {
+  margin: 10rem auto;
+}
+
+.converter-subcontainer {
+  width: 30rem;
+  height: 17rem;
+  border: 2px solid var(--font);
+  margin: 5rem auto;
+}
+
+#number {
+  width: 90%;
+  height: 3rem;
+  font-size: 1.5rem;
+}
+
+#convert-btn {
+  cursor: pointer;
+  width: 90%;
+  height: 3rem;
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+}
