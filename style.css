@@ -46,7 +46,7 @@ fieldset {
 }
 
 #palindrome-input {
-  height: 3.5vh;
+  min-height: 3rem;
   width: 25vw;
   border-radius: 5px;
   text-align: center;
@@ -117,6 +117,16 @@ fieldset {
   border-radius: 4px;
   display: block;
   font-size: 1.5rem;
+}
+
+#validator-result {
+  margin: 20px auto;
+  width: 350px;
+  height: 80px;
+  border: 2px solid var(--font);
+  border-radius: 2px;
+  text-align: center;
+  font-size: 2rem;
 }
 
 .converter-main-container {

@@ -26,20 +26,35 @@ const validatorClear = document.getElementById("clear-btn");
 const validatorResult = document.getElementById("validator-result");
 
 const checkValueV = (input) => {
-  if (input === "") {
+  const userInput = input;
+
+  if (userInput === "") {
     alert("Please provide a phone number");
     return;
   }
+  const countryCode = "^(1\\s?)?";
+  const areaCode = "(\\([0-9]{3}\\)|[0-9]{3})";
+  const spacesDashes = "[\\s\\-]?";
+  const phoneNumber = "[0-9]{3}[\\s\\-]?[0-9]{4}$";
+  const phoneRegex = new RegExp(
+    `${countryCode}${areaCode}${spacesDashes}${phoneNumber}`
+  );
 
-  console.log(input);
+  validatorResult.classList.remove("hidden");
+
+  validatorResult.innerHTML += `${
+    phoneRegex.test(input) ? "Valid" : "Invalid"
+  } US number: ${input}`;
+  validatorInput.value = "";
+
+  console.log(userInput);
 };
-
+// idk what is forcefully clearing the result
 const clearValue = () => {
-  validatorResult.textContent = "";
+  validatorResult.classList.add("hidden");
 };
 
 validatorCheck.addEventListener("click", () => {
   checkValueV(validatorInput.value);
-  validatorInput.value = "";
 });
 validatorClear.addEventListener("click", clearValue);
