@@ -75,6 +75,11 @@ fieldset {
   margin-left: 1vw;
 }
 
+#palindrome-result {
+  font-size: 1.7rem;
+  margin-top: 1rem;
+}
+
 .validator-main-container {
   margin: 10rem auto;
 }
